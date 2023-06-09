@@ -43,7 +43,7 @@ def edit_products(id):
                        name=product.name,
                        description=product.description,
                        price=product.price,
-                       iamge=product.image)
+                       image=product.image)
     if product.owner_id == current_user.id:
         if form.validate_on_submit():
             product.part = form.part.data
